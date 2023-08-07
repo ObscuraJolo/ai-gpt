@@ -14,7 +14,7 @@ const DID_API = {
 };
 
 let userText = null;
-const API_KEY = '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'; // Paste your API key here
+const API_KEY = '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'; // Paste your API key here
 
 let peerConnection;
 let streamId;
