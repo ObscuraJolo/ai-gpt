@@ -1,0 +1,8 @@
+{
+  "key": "bWlzdHlyaW91cy5hbmRyZWFAZ21haWwuY29t:8COcCWLT_xbXLr8prstqZ",
+  "url": "https://api.d-id.com",
+  "key_eleven": "1fefa3efccc79b3c9189d099903455fd",
+  "url_eleven": "https://api.elevenlabs.io/v1/text-to-speech",
+  "voice_id": "KnYFC38VyV4KNvdv9Tq0",
+  "url_openai": "http://localhost:3000/openai"
+}
