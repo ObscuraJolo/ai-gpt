@@ -3,9 +3,9 @@ import express from 'express';
 import FormData from 'form-data';
 import fs from 'fs';
 import http from 'http';
-import { getData } from './controllers/open-ai.controller.js';
+import { getData } from '../controllers/open-ai.controller.js';
 
-import config from './api.json' assert { type: 'json' };
+import config from '../api.json' assert { type: 'json' };
 
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -15,9 +15,13 @@ const app = express();
 app.use(express.json());
 
 const currentUrl = import.meta.url;
-const currentPath = dirname(fileURLToPath(currentUrl));
+// const currentPath = dirname(fileURLToPath(currentUrl));
 
-app.use('/', express.static(currentPath));
+// app.use('/', express.static(currentPath));
+
+const path = dirname('../');
+console.log('URL: ', path);
+app.use('/', express.static(path));
 
 const server = http.createServer(app);
 
